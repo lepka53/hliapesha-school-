@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    text-align: center;
+    color: #ffff;
+    padding: 200px;
+    background-image: url(image.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+}
+
+/* Styl dla h1 i h2 */
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+/* Styl dla paragrafu */
+p {
+    
+    margin: 0px;
+    font-size: 2rem;
+}
+
+.btn {
+    font-family: monospace;
+    font-size: larger;
+    text-decoration: none;
+    padding: 20px 36px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #666;
+}
+
+/* Efekt neonowych linii */
+.main-content::before, 
+.main-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(180deg, #00f, #f0f);
+}
+
+.main-content::before {
+    left: -20px;
+}
+
+.main-content::after {
+    right: -20px;
+}
